@@ -7,11 +7,7 @@ import org.bukkit.plugin.java.JavaPlugin
 class Main: JavaPlugin() {
 
     companion object {
-        private var instance: Main? = null
-
-        fun getInstance(): Main? {
-            return instance
-        }
+        private lateinit var instance: Main
     }
 
     override fun onEnable() {
